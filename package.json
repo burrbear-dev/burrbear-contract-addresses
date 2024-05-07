@@ -1,0 +1,17 @@
+{
+  "name": "@burrbear/burrbear-contract-addresses",
+  "version": "1.0.77-beta-1",
+  "description": "List of BurrBear contract addresses across all chains",
+  "repository": "https://github.com/burrbear-dev/burrbear-contract-addresses",
+  "author": "BurrBear Dev",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "npm-publish": "tsc && npm publish --access public --scope=@burrbear"
+  }
+}
