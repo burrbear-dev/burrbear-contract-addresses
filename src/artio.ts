@@ -1,11 +1,8 @@
 import { AddressCollection, ZERO_ADDRESS } from './types'
 
 const tokens = {
-  TestToken: '0x1A9c0F67fe805780A0FA0487Ec446E7e06F067e8',
-  NativeToken: '0x0000000000000000000000000000000000001010',
-  HONEY: '0xd23Cd7a9FF611ba3B3b31a424B530885C638ced9',
-  XSGD: '0x84c29961730A16BAc85dbB02a0f05093ca43F206',
-  USDC: '0x94d81606Dca42D3680c0DFc1d93eeaF6C2D55f2d',
+  XSGD: '0x9e11bf9d712fe1F9117688924223eDC139181183',
+  USDC: '0xF5C462bf81a6b6af0f87749eFACe2453c35CB519',
   BAL: '0x9AA488bc4c3c237104CD6661e076B22e0535eCFA'
 }
 
@@ -41,15 +38,15 @@ const addresses: AddressCollection = {
     fxPoolFactory: ZERO_ADDRESS,
     fxPoolDeployer: ZERO_ADDRESS,
     fxPoolDeployerLib: ZERO_ADDRESS,
-    fxPoolDeployerTracker: '0xcE63641aDf5134C8D4835D38e9FA28779c60636e',
+    fxPoolDeployerTracker: '0x90c58D12b248d7054adcB5baad467dEb8e33ABcE',
     baseAssimilatorTemplate: ZERO_ADDRESS,
     proportionalLiquidity: ZERO_ADDRESS,
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,
     oracles: {
-      HONEY: '0x39A632989Ae533a2bc1b66f17f5642906AB3F6c5',
-      USDC: '0x691D4d0e34e48a08991FdF43374b31955A496317',
-      XSGD: '0x4C5cFFCdd3e8dCB838764379823002837fd26fec'
+      HONEY: '0x40ff4B351FF7e40CF140b8eCeb8cA0a747a56d33',
+      USDC: '0x8bdD150f2a74011aDA6Bd9C1790015Ef65a2Af38',
+      XSGD: '0x1A2606F88EbB33e513010ffE7ee2bD5c19815BbA'
     },
     assimilators: {},
     protocolFeesDistributor: ZERO_ADDRESS,
