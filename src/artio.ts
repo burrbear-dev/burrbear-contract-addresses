@@ -6,35 +6,16 @@ const tokens = {
   HONEY: '0xd23Cd7a9FF611ba3B3b31a424B530885C638ced9',
   XSGD: '0x84c29961730A16BAc85dbB02a0f05093ca43F206',
   USDC: '0x94d81606Dca42D3680c0DFc1d93eeaF6C2D55f2d',
-  // Balancer tokens
-  BAL: '0x9AA488bc4c3c237104CD6661e076B22e0535eCFA' // Balancer governance token
-} 
-
-const composableStablePools = {
-  USDC_USDT_COMPOSABLE_STABLE_POOL:
-    '0x9610423917403d142705D8d060127F88764120f6',
-  EURS_USDC_COMPOSABLE_STABLE_POOL:
-    '0xf0b886478D6c0c579E53faCbcC6E4abCE96AE4B2',
-  DAI_USDT_COMPOSABLE_STABLE_POOL: '0xb43d9bb28e60e5EdE04DfBe2c723A9BCF578397C'
-} as any
-
-const weightedPools = {
-  MOCK_WEIGHTED_POOL: ''
-}
-
-const allPools = {
-  ...composableStablePools,
-  ...weightedPools
+  BAL: '0x9AA488bc4c3c237104CD6661e076B22e0535eCFA'
 }
 
 const poolIds = {
-  USDC_USDT_COMPOSABLE_STABLE_POOL:
-    '0x9610423917403d142705d8d060127f88764120f6000000000000000000000003',
-  EURS_USDC_COMPOSABLE_STABLE_POOL:
-    '0xf0b886478d6c0c579e53facbcc6e4abce96ae4b2000000000000000000000004',
-  DAI_USDT_COMPOSABLE_STABLE_POOL:
-    '0xb43d9bb28e60e5ede04dfbe2c723a9bcf578397c000000000000000000000005'
-} as any
+  FX_XSGD_USDC: '0xca7081767ca98cef762666d9b8aec4b79aa183c700020000000000000000000a'
+}
+
+const poolAddresses = {
+  FX_XSGD_USDC: '0xcA7081767ca98ceF762666D9B8AEc4b79aA183C7'
+}
 
 const addresses: AddressCollection = {
   ops: {
@@ -44,14 +25,14 @@ const addresses: AddressCollection = {
   ammV2: {
     vault: '0xD6D473f54Cda4eb4396690e35d806131bdffE579',
     pools: {
-      all: allPools,
+      all: poolAddresses,
       allPoolIds: poolIds,
       genesis: [],
       enabled: [
         {
-          assets: [tokens.TestToken, tokens.NativeToken],
-          address: composableStablePools.USDC_USDT_COMPOSABLE_STABLE_POOL,
-          poolId: composableStablePools.MOCK_COMPOSABLE_STABLE_POOL
+          assets: [tokens.XSGD, tokens.USDC],
+          address: poolAddresses.FX_XSGD_USDC,
+          poolId: poolIds.FX_XSGD_USDC
         }
       ],
       disabled: [],

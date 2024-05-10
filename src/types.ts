@@ -111,57 +111,10 @@ export type AddressCollection = {
     vault: string
     pools: {
       all: {
-        LP_CHF_USDC?: string
-        LP_EURS_USDC?: string
-        LP_GBP_USDC?: string
-        LP_WETH_USDC?: string
-        LP_XIDR_USDC?: string
-        LP_XSGD_USDC?: string
-        LP_TCAD_USDC?: string
-        LP_TGBP_USDC?: string
-        LP_UST_USDC?: string
-        LP_TAUD_USDC?: string
-        LP_fxPHP_USDC?: string
-        LP_tagPHP_USDC?: string
-        LP_LPHP_USDC?: string
-        LP_fxAUD_USDC?: string
-        LP_EUROC_USDC?: string
-        LP_VCHF_USDC?: string
-        LP_BRLA_USDC?: string
-        LP_VNXAU_USDC?: string
-        LP_VEUR_USDC?: string
-        'LP_XSGD_bb-a-usd'?: string
-        'LP_EURS_bb-a-usd'?: string
-        LP_PHPT_USDC?: string
-        LP_PHPX_USDC?: string
-        LP_GBPT_USDC?: string
-        LP_EURS_USDC_INACTIVE?: string
-        LP_GBPT_USDC_INACTIVE?: string
-        LP_XSGD_USDC_INACTIVE?: string
-        LP_BRLA_USDC_INACTIVE?: string
-        LP_VCHF_USDC_INACTIVE?: string
-        LP_VNXAU_USDC_INACTIVE?: string
-        LP_EUROC_USDC_INACTIVE?: string
-        LP_VEUR_USDC_INACTIVE?: string
-        LP_XSGD_XUSD?: string
+        FX_XSGD_USDC?: string
       }
       allPoolIds: {
-        EURS_USDC?: string
-        GBPT_USDC?: string
-        XSGD_USDC?: string
-        BRLA_USDC?: string
-        VCHF_USDC?: string
-        VEUR_USDC?: string
-        VNXAU_USDC?: string
-        EUROC_USDC?: string
-        EURS_USDC_INACTIVE?: string
-        GBPT_USDC_INACTIVE?: string
-        XSGD_USDC_INACTIVE?: string
-        BRLA_USDC_INACTIVE?: string
-        VCHF_USDC_INACTIVE?: string
-        VEUR_USDC_INACTIVE?: string
-        VNXAU_USDC_INACTIVE?: string
-        EUROC_USDC_INACTIVE?: string
+        FX_XSGD_USDC?: string
       }
       genesis: Pool[]
       enabled: Pool[]
