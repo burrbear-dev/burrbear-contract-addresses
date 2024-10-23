@@ -163,6 +163,7 @@ export type AddressCollection = {
       USD?: string
       AUX?: string
       HONEY?: string
+      NECT?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
