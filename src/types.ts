@@ -164,6 +164,9 @@ export type AddressCollection = {
       AUX?: string
       HONEY?: string
       NECT?: string
+      ETH?: string
+      SOL?: string
+      TIA?: string
     }
     protocolFeesDistributor: string
     balancerProtocolFeeCollector: string
