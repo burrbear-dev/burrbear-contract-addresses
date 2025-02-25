@@ -34,8 +34,8 @@ const addresses: AddressCollection = {
     assimilatorFactory: ZERO_ADDRESS,
     swapLibrary: ZERO_ADDRESS,
     oracles: {
-      USDC: '0x4BAD96DD1C7D541270a0C92e1D4e5f12EEEA7a57',
-      NECT: '0x5e21f6530f656A38caE4F55500944753F662D184'
+      USDC: '0x48623292bD8293b747571934379B9D3E5423DBB6',
+      NECT: '0x9f555A3115C2Da9574c84C4Dfb1617193aA7AFE2'
     },
     assimilators: {},
     protocolFeesDistributor: ZERO_ADDRESS,
